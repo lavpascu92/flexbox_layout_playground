@@ -1,0 +1,139 @@
+@import "./partials/variables";
+@import "./partials/mixins";
+// FONT IMPORT
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+html,
+body {
+    @include font_openSans_regular($font_S);
+    min-height: 100vh;
+}
+
+//Sticky footer layout start
+.bg-violet {
+    background-color: $color_violet;
+    color: $color_violet;
+}
+
+.main-container {
+    min-height: 95vh;
+    padding: 15px;
+}
+
+.sticky-layout {
+    display: flex;
+    flex-direction: column;
+}
+
+.sticky-layout-header {
+    min-height: 60px;
+    // height: 80px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 25px;
+    text-transform: uppercase;
+}
+
+.sticky-layout-logo {
+    font-size: $font_L;
+    align-self: center;
+}
+
+.sticky-layout-header-ul {
+    display: flex;
+    list-style-type: none;
+    align-self: center;
+
+    li {
+        cursor: pointer;
+        padding: 0 5px;
+        font-size: $font_S;
+        font-weight: 400;
+    }
+}
+
+.sticky-layout-main {
+    flex-grow: 1;
+    background-color: #fff;
+    margin: 2px 0;
+    padding: 40px 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.sticky-layout-footer {
+    min-height: 60px;
+    background-color: #fff;
+}
+
+.sticky-layout-footer-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    li {
+        cursor: pointer;
+        padding: 0 5px;
+        font-size: $font_S;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}
+
+//Sticky footer layout end
+
+//Split screen layout start
+.bg-blue {
+    background-color: $color_blue;
+    color: $color_blue;
+}
+
+.split-screen-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.split-screen-left {
+    flex-basis: 49.7%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h4{
+        font-weight: 600;
+        font-size: $font_M;
+    }
+}
+
+.blue-img {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(17, 148, 246, 0.3);
+    border-radius: 50%;
+
+    img {
+        text-align: center;
+    }
+
+}
+
+.split-screen-right {
+    flex-basis: 49.7%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p{
+        width: 60%;
+    }
+}
+
+//Split screen layout end
