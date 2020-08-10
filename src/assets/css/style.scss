@@ -16,7 +16,9 @@ body {
     min-height: 95vh;
     padding: 16px;
 }
-
+.links-reset{
+    text-decoration: none;
+}
 //Sticky footer layout start
 .bg-violet {
     background-color: $color_violet;
@@ -43,51 +45,55 @@ body {
     align-self: center;
 }
 
-.sticky-layout-header-ul {
+.sticky-layout-header-nav {
     display: flex;
     list-style-type: none;
     align-self: center;
-
-    li {
-        cursor: pointer;
-        padding: 0 5px;
-        font-size: $font_S;
-        font-weight: 400;
-    }
+}
+.sticky-layout-nav-links{
+    cursor: pointer;
+    padding: 0 5px;
+    font-size: $font_S;
+    font-weight: 400;
+    color: $color_violet;
+    
 }
 
 .sticky-layout-main {
     flex-grow: 1;
     background-color: #fff;
-    margin: 2px 0;
+    margin-top: 2px;
     display: flex;
     justify-content: center;
-
-    p {
-        width: 75%;
-        padding: 80px 0;
-        line-height: 1.8rem;
-    }
+}
+.sticky-layout-main-para{
+    width: 75%;
+    padding: 80px 0;
+    line-height: 1.8rem;
 }
 
 .sticky-layout-footer {
     min-height: 60px;
     background-color: #fff;
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
 }
 
-.sticky-layout-footer-ul {
+.sticky-layout-footer-nav {
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
-
-    li {
-        cursor: pointer;
-        padding: 0 5px;
-        font-size: $font_S;
-        text-transform: uppercase;
-        font-weight: 600;
-    }
+    align-items: center;
+}
+.sticky-layout-footer-links{
+    cursor: pointer;
+    padding: 0 5px;
+    font-size: $font_S;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $color_violet;
 }
 
 //Sticky footer layout end
@@ -111,11 +117,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    h4 {
-        font-weight: 600;
-        font-size: $font_M;
-    }
+}
+.split-screen-left-title{
+    font-weight: 600;
+    font-size: $font_M;
+    padding-top: 20px;
 }
 
 .blue-img {
@@ -140,10 +146,11 @@ body {
     justify-content: center;
     align-items: center;
 
-    p {
-        width: 60%;
-        line-height: 1.5rem;
-    }
+}
+.split-screen-right-para{
+    width: 70%;
+    line-height: 1.5rem;
+    padding-top: 20px;
 }
 
 //Split screen layout end
@@ -169,15 +176,15 @@ body {
 }
 
 .sidebar-layout-right-wrapper {
-    padding: 8%;
-
-    h3 {
-        font-size: $font_L;
-    }
-
-    p {
-        font-weight: 900;
-    }
+    padding: 10%;
+}
+.sidebar-layout-right-title{
+    font-size: $font_L;
+    padding-bottom: 20px;
+    font-weight: 900;
+}
+.sidebar-layout-right-subtitle{
+    font-weight: 900;
 }
 
 .sidebar-layout-left-flexible {
@@ -186,7 +193,14 @@ body {
     margin-left: 0.5%;
     overflow: scroll;
     padding: 5% 10%;
-
+}
+.sidebar-layout-left-title{
+    font-weight: 700;
+    font-size: $font_M;
+    padding-bottom: 20px;
+}
+.sidebar-layout-left-para{
+    padding-bottom: 20px;
 }
 
 //Sidebar layout end
@@ -201,7 +215,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-
 .hero-cover-main {
     background-color: #fff;
     flex: 1;
@@ -211,7 +224,11 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+.hero-cover-main-title{
+    padding-top: 20px;
+    font-weight: 600;
+    font-size: $font_L;
+}
 .orange-img {
     width: 220px;
     height: 220px;
@@ -230,25 +247,26 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1%;
+    padding: 2%;
 }
 
 .hero-cover-footer-logo {
     padding: 0 4%;
     font-size: $font_S;
+    font-weight: 600;
 }
 
-.hero-cover-layout-ul {
+.hero-cover-layout-nav {
     display: flex;
     padding: 0 4%;
     font-size: $font_S;
     list-style: none;
-
-    li {
-        padding: 0 5px;
-        cursor: pointer;
-        font-weight: bold;
-    }
+}
+.hero-cover-nav-links{
+    padding: 0 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: $color_redOrange;
 }
 
 //Hero cover layout end
@@ -259,11 +277,10 @@ body {
     color: $color_orange;
 }
 
-section.holy-grail-layout {
-    max-height: 100vh;
+.holy-grail-layout {
+    max-height: 95vh;
     display: flex;
     flex-direction: column;
-
 }
 
 .holy-grail-header {
@@ -272,28 +289,27 @@ section.holy-grail-layout {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 3%;
+    padding: 1.5%;
 }
 
 .holy-grail-header-logo {
     font-size: $font_L;
+    color: $color_orange;
 }
 
-.holy-grail-header-ul {
+.holy-grail-header-nav {
     list-style-type: none;
     display: flex;
-    padding: 0 5%;
-
-    li {
-        padding: 0 5%;
-        font-weight: bold;
-        cursor: pointer;
-    }
+}
+.holy-grail-header-links{
+    margin-left: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: $color_orange;
 }
 
 .holy-grail-main {
     margin-top: 0.3%;
-    margin-bottom: 0.3%;
     display: flex;
     flex-direction: row;
     flex: 1;
@@ -303,9 +319,12 @@ section.holy-grail-layout {
 .holy-grail-main-aside {
     width: 20%;
     background-color: #fff;
+    
 }
 
 .holy-grail-main-center {
+    // here I couldn't modify the margin in one direction 
+    // because I made the aside section identical
     margin: 0 0.3%;
     background-color: #fff;
     flex: 1;
@@ -313,27 +332,41 @@ section.holy-grail-layout {
 }
 
 .holy-grail-main-center-wrapper {
-    padding: 3% 10%;
+    padding: 10%;
+}
+.holy-grail-main-center-title{
+    padding-bottom: 16px;
+    font-weight: 600;
+    font-size: $font_M;
+}
+.holy-grail-main-center-para{
+    margin-bottom: 16px;
+    line-height: 1.5rem;
+    font-size: $font_XS;
 }
 
 .holy-grail-footer {
+    margin-top: 0.3%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: #fff;
+    padding: 1.5%;
 }
 
-.holy-grail-footer-ul {
+.holy-grail-footer-nav {
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    justify-content: center;
     padding: 0;
-    li {
-        margin: 5%;
-        cursor: pointer;
-        font-weight: bold;
-    }
+}
+.holy-grail-footer-links{
+    padding: 5%;
+    cursor: pointer;
+    font-weight: bold;
+    color: $color_orange;
 }
 
 //Holy grail layout end
@@ -353,8 +386,10 @@ section.holy-grail-layout {
 
 .fluid-grid-layout-single {
     width: 22%;
+    // Case too complicated to put margins in one 
+    // direction, changes all layout, suggestions??
     margin: 0.5%;
-    padding: 1% 5%;
+    padding: 2% 5%;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -365,5 +400,9 @@ section.holy-grail-layout {
 .double {
     width: 55%;
 }
-
+.fluid-grid-title{
+    font-size: $font_M;
+    font-weight: 600;
+    padding-bottom: 16px;
+}
 //Fluid grid layout end

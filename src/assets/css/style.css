@@ -16,6 +16,10 @@ body {
   padding: 16px;
 }
 
+.links-reset {
+  text-decoration: none;
+}
+
 .bg-violet {
   background-color: #6734ba;
   color: #6734ba;
@@ -55,7 +59,7 @@ body {
       align-self: center;
 }
 
-.sticky-layout-header-ul {
+.sticky-layout-header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,11 +68,12 @@ body {
       align-self: center;
 }
 
-.sticky-layout-header-ul li {
+.sticky-layout-nav-links {
   cursor: pointer;
   padding: 0 5px;
   font-size: 1rem;
   font-weight: 400;
+  color: #6734ba;
 }
 
 .sticky-layout-main {
@@ -76,7 +81,7 @@ body {
       -ms-flex-positive: 1;
           flex-grow: 1;
   background-color: #fff;
-  margin: 2px 0;
+  margin-top: 2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,7 +90,7 @@ body {
           justify-content: center;
 }
 
-.sticky-layout-main p {
+.sticky-layout-main-para {
   width: 75%;
   padding: 80px 0;
   line-height: 1.8rem;
@@ -94,9 +99,16 @@ body {
 .sticky-layout-footer {
   min-height: 60px;
   background-color: #fff;
+  margin-top: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.sticky-layout-footer-ul {
+.sticky-layout-footer-nav {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -108,14 +120,18 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.sticky-layout-footer-ul li {
+.sticky-layout-footer-links {
   cursor: pointer;
   padding: 0 5px;
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 600;
+  color: #6734ba;
 }
 
 .bg-blue {
@@ -155,9 +171,10 @@ body {
           align-items: center;
 }
 
-.split-screen-left h4 {
+.split-screen-left-title {
   font-weight: 600;
   font-size: 1.25rem;
+  padding-top: 20px;
 }
 
 .blue-img {
@@ -196,9 +213,10 @@ body {
           align-items: center;
 }
 
-.split-screen-right p {
-  width: 60%;
+.split-screen-right-para {
+  width: 70%;
   line-height: 1.5rem;
+  padding-top: 20px;
 }
 
 .bg-lightblue {
@@ -233,14 +251,16 @@ body {
 }
 
 .sidebar-layout-right-wrapper {
-  padding: 8%;
+  padding: 10%;
 }
 
-.sidebar-layout-right-wrapper h3 {
+.sidebar-layout-right-title {
   font-size: 1.5rem;
+  padding-bottom: 20px;
+  font-weight: 900;
 }
 
-.sidebar-layout-right-wrapper p {
+.sidebar-layout-right-subtitle {
   font-weight: 900;
 }
 
@@ -252,6 +272,16 @@ body {
   margin-left: 0.5%;
   overflow: scroll;
   padding: 5% 10%;
+}
+
+.sidebar-layout-left-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding-bottom: 20px;
+}
+
+.sidebar-layout-left-para {
+  padding-bottom: 20px;
 }
 
 .bg-redorange {
@@ -290,6 +320,12 @@ body {
           align-items: center;
 }
 
+.hero-cover-main-title {
+  padding-top: 20px;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
 .orange-img {
   width: 220px;
   height: 220px;
@@ -319,15 +355,16 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1%;
+  padding: 2%;
 }
 
 .hero-cover-footer-logo {
   padding: 0 4%;
   font-size: 1rem;
+  font-weight: 600;
 }
 
-.hero-cover-layout-ul {
+.hero-cover-layout-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -336,10 +373,11 @@ body {
   list-style: none;
 }
 
-.hero-cover-layout-ul li {
+.hero-cover-nav-links {
   padding: 0 5px;
   cursor: pointer;
   font-weight: bold;
+  color: #ff5722;
 }
 
 .bg-orange {
@@ -347,8 +385,8 @@ body {
   color: #f90;
 }
 
-section.holy-grail-layout {
-  max-height: 100vh;
+.holy-grail-layout {
+  max-height: 95vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -373,30 +411,30 @@ section.holy-grail-layout {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 3%;
+  padding: 1.5%;
 }
 
 .holy-grail-header-logo {
   font-size: 1.5rem;
+  color: #f90;
 }
 
-.holy-grail-header-ul {
+.holy-grail-header-nav {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 5%;
 }
 
-.holy-grail-header-ul li {
-  padding: 0 5%;
+.holy-grail-header-links {
+  margin-left: 16px;
   font-weight: bold;
   cursor: pointer;
+  color: #f90;
 }
 
 .holy-grail-main {
   margin-top: 0.3%;
-  margin-bottom: 0.3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -425,10 +463,23 @@ section.holy-grail-layout {
 }
 
 .holy-grail-main-center-wrapper {
-  padding: 3% 10%;
+  padding: 10%;
+}
+
+.holy-grail-main-center-title {
+  padding-bottom: 16px;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.holy-grail-main-center-para {
+  margin-bottom: 16px;
+  line-height: 1.5rem;
+  font-size: 0.85rem;
 }
 
 .holy-grail-footer {
+  margin-top: 0.3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -443,9 +494,10 @@ section.holy-grail-layout {
       -ms-flex-align: center;
           align-items: center;
   background-color: #fff;
+  padding: 1.5%;
 }
 
-.holy-grail-footer-ul {
+.holy-grail-footer-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -454,13 +506,17 @@ section.holy-grail-layout {
       -ms-flex-direction: row;
           flex-direction: row;
   list-style-type: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0;
 }
 
-.holy-grail-footer-ul li {
-  margin: 5%;
+.holy-grail-footer-links {
+  padding: 5%;
   cursor: pointer;
   font-weight: bold;
+  color: #f90;
 }
 
 .bg-purple {
@@ -486,7 +542,7 @@ section.holy-grail-layout {
 .fluid-grid-layout-single {
   width: 22%;
   margin: 0.5%;
-  padding: 1% 5%;
+  padding: 2% 5%;
   background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -502,5 +558,11 @@ section.holy-grail-layout {
 
 .double {
   width: 55%;
+}
+
+.fluid-grid-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding-bottom: 16px;
 }
 /*# sourceMappingURL=style.css.map */
